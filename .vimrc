@@ -8,7 +8,7 @@ set backspace=indent,eol,start
 
 set number
 set ruler
-
+set cursorline
 set history=1000
 
 set expandtab
@@ -25,3 +25,14 @@ endif
 
 match ErrorMsg '\%>79v.\+'
 
+
+" Pathogen Plugin Settings
+set rtp+=~/.vim/bundle/pathogen
+execute pathogen#infect()
+filetype plugin indent on
+
+
+" Solarized Color Theme Preferences
+let g:solarized_termcolors=16
+set background=dark
+colorscheme solarized
