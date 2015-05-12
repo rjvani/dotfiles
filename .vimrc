@@ -12,7 +12,9 @@ set cursorline
 set history=1000
 
 set expandtab
-set tabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 retab
 
 if !empty(&t_Co) || has("gui_running")
