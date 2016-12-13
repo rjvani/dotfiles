@@ -23,7 +23,7 @@ endif
 
 if has("mouse")
   set mouse=a
-endif 
+endif
 
 match ErrorMsg '\%>79v.\+'
 
@@ -38,3 +38,6 @@ filetype plugin indent on
 let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
+
+" Productivity ++
+set rl
