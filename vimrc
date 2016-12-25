@@ -34,9 +34,9 @@ set showcmd
 
 " Tab settings
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 retab
 
 " Display optimizations
@@ -101,4 +101,12 @@ nnoremap q :bp\|bd #<CR>
 
 " Strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
+
+" Filetype space configurations.
+autocmd FileType c   setlocal shiftwidth=2
+autocmd FileType c   setlocal tabstop=2
+autocmd FileType c   setlocal softtabstop=2
+autocmd FileType sml setlocal shiftwidth=2
+autocmd FileType sml setlocal tabstop=2
+autocmd FileType sml setlocal softtabstop=2
 
