@@ -82,5 +82,5 @@ HELPDIR=/usr/local/share/zsh/help
 alias help="run-help"
 
 # Load utility scripts
-source ./.util/alias.sh
+source ~/.util/alias.sh
 

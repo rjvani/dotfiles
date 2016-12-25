@@ -3,6 +3,9 @@
 #
 # Brief: Useful aliases for the shell.
 
+# Vundle plugin installation.
+alias vup="vim +PluginInstall +qall"
+
 # I hate typing
 alias cdd="cd .."
 alias cddd="cd ../.."
