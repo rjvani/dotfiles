@@ -75,12 +75,30 @@ set laststatus=2
 set t_Co=256
 set noshowmode
 
-" NERDTree shortcut
+" Get rid of annoying warnings.
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+" Function for toggling relative line numbers.
+function! NumberToggle()
+  if (&relativenumber)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+" Toggle relative line numbers.
+map <silent> <C-m> :call NumberToggle()<cr>
+
+" NERDTree shortcuts
 map <silent> <C-n> :NERDTreeToggle<CR>
 map <silent> <C-o> :bp<CR>
 map <silent> <C-p> :bn<CR>
 nnoremap q :bp\|bd #<CR>
 
-" Strip whitespace on save
+" Strip whitespace on save.
 autocmd BufWritePre * StripWhitespace
 
