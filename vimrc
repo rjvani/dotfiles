@@ -13,10 +13,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My vim plugins
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'groenewege/vim-less'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 
 call vundle#end()
 filetype plugin indent on
