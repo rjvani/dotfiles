@@ -15,13 +15,15 @@ Plugin 'VundleVim/Vundle.vim'
 " My vim plugins
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'groenewege/vim-less'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-scripts/HTML-AutoCloseTag'
+Bundle 'yonchu/accelerated-smooth-scroll'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,9 +41,9 @@ set showcmd
 
 " Tab settings
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 retab
 
 " Display optimizations
@@ -71,7 +73,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ":t"
 
 " Solarized Color Theme Preferences
-let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
@@ -86,18 +88,6 @@ command Wq wq
 command W w
 command Q q
 
-" Function for toggling relative line numbers.
-function! NumberToggle()
-  if (&relativenumber)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-" Toggle relative line numbers.
-map <silent> <C-m> :call NumberToggle()<cr>
-
 " NERDTree shortcuts
 map <silent> <C-n> :NERDTreeToggle<CR>
 map <silent> <C-o> :bp<CR>
@@ -108,10 +98,7 @@ nnoremap q :bp\|bd #<CR>
 autocmd BufWritePre * StripWhitespace
 
 " Filetype space configurations.
-autocmd FileType c   setlocal shiftwidth=2
-autocmd FileType c   setlocal tabstop=2
-autocmd FileType c   setlocal softtabstop=2
-autocmd FileType sml setlocal shiftwidth=2
-autocmd FileType sml setlocal tabstop=2
-autocmd FileType sml setlocal softtabstop=2
+autocmd FileType py  setlocal shiftwidth=4
+autocmd FileType py  setlocal tabstop=4
+autocmd FileType py  setlocal softtabstop=4
 

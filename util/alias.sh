@@ -41,3 +41,5 @@ GIT_LOG_FORMAT="--pretty=\"%C(bold green)%h%Creset %C(yellow)%an%Creset%C(auto)%
 alias gl="git log --graph $GIT_LOG_FORMAT"
 alias gll="gl --all"
 
+alias cmu="cd ~/Documents/cmu/s17"
+

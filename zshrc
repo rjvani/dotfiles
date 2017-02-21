@@ -84,3 +84,6 @@ alias help="run-help"
 # Load utility scripts
 source ~/.util/alias.sh
 
+# Django Stuff
+source ~/.util/django-keys.sh
+
