@@ -1,3 +1,6 @@
+# File: .gitignore
+# Author: Rohan Jadvani
+
 *.sw*
 
 # My Django configuration files

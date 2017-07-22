@@ -1,7 +1,5 @@
 # File: .zshrc
 # Author: Rohan Jadvani
-#
-# Inspiration from jez.
 
 # Basic zsh config settings
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets)

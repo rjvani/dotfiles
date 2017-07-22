@@ -20,10 +20,10 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'yonchu/accelerated-smooth-scroll'
 
 call vundle#end()
 filetype plugin indent on
